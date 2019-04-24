@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
 
-interface Props {
-}
+interface Props {}
 
 export default class App extends Component<Props> {
   render() {
