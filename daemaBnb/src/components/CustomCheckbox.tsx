@@ -6,8 +6,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
   },
-  label: {
-  },
 });
 
 interface Props {
