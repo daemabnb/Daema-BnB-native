@@ -10,17 +10,17 @@ const styles = StyleSheet.create({
 
 interface Props {
   isChecked: boolean;
-  onToggleCheckbox: () => void;
+  onChange: () => void;
   label?: string;
   labelColor?: string;
 }
 
 const CustomCheckbox: React.FC<Props> = (
-  { isChecked, onToggleCheckbox, label = '', labelColor = '#000' },
+  { isChecked, onChange, label = '', labelColor = '#000' },
 ) => {
   return (
     <View style={styles.container}>
-      <CheckBox value={isChecked} onChange={onToggleCheckbox} />
+      <CheckBox value={isChecked} onChange={onChange} />
       <Text style={{ ...StyleSheet.flatten({ color: labelColor }) }}>{label}</Text>
     </View>
   );
