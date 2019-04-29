@@ -21,7 +21,7 @@ const CustomCheckbox: React.FC<Props> = (
   return (
     <View style={styles.container}>
       <CheckBox value={isChecked} onChange={onChange} />
-      <Text style={{ ...StyleSheet.flatten({ color: labelColor }) }}>{label}</Text>
+      <Text style={{ color: labelColor }}>{label}</Text>
     </View>
   );
 };
