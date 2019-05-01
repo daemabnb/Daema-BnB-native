@@ -3,13 +3,8 @@
   "extends": "tslint-config-airbnb",
   "jsRules": {},
   "rules": {
-    "import-name": [true, { "react": "React" }],
-    "variable-name": [
-      true,
-      "ban-keywords",
-      "check-format",
-      "allow-pascal-case"
-    ]
+    "import-name": [true, { "react": "React", "native": "styled" }],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"]
   },
   "rulesDirectory": []
 }
