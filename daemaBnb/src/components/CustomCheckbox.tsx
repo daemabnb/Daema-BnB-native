@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 
 interface Props {
   isChecked: boolean;
-  onChange: () => void;
+  onChange: (value: boolean) => void;
   label?: string;
   labelColor?: string;
 }
@@ -18,9 +18,10 @@ interface Props {
 const CustomCheckbox: React.FC<Props> = (
   { isChecked, onChange, label = '', labelColor = '#000' },
 ) => {
+  const valueBindedOnChange = onChange.bind(null, !isChecked);
   return (
     <View style={styles.container}>
-      <CheckBox value={isChecked} onChange={onChange} />
+      <CheckBox value={isChecked} onChange={valueBindedOnChange} />
       <Text style={{ color: labelColor }}>{label}</Text>
     </View>
   );
