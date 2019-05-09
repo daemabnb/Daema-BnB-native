@@ -11,7 +11,7 @@ import {
   UserName,
 } from './style';
 
-import facebookPng from '../assets/facebook.png';
+import facebookPng from '../../assets/facebook.png';
 
 interface Props {
   facebookUrl: string;
