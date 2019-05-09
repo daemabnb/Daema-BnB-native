@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
   "prettier.tslintIntegration": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.snippetSuggestions": "top",
 }
