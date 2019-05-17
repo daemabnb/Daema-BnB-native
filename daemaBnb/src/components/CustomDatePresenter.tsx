@@ -12,7 +12,9 @@ const color = 'black';
 const CustomDatePresenter: React.FC<Props> = ({ startDate, endDate }) => {
   return (
     <View>
-      <Text style={{ color }}>{formatDate(startDate, endDate)}</Text>
+      <Text style={{ color }}>{`${formatDate(startDate)} ~ ${formatDate(
+        endDate,
+      )}`}</Text>
     </View>
   );
 };
